@@ -31,7 +31,7 @@ Pozwala on na rozmowy z przyjació³mi na kana³ach publicznych lub
 prywatnych, wysy³anie i otrzymywanie wiadomo¶ci itp.
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %build
 %configure \
