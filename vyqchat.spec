@@ -10,7 +10,9 @@ Source0:	http://linux.bydg.org/~yogin/%{name}-%{version}rc1.tar.gz
 URL:		http://linux.bydg.org/~yogin/#vyqchat
 BuildRequires:	artsc-devel
 BuildRequires:	libsndfile-devel
+BuildRequires:	pkgconfig
 BuildRequires:	qt-devel >= 3.1.0
+BuildRequires:	which
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
