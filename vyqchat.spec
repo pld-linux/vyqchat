@@ -8,8 +8,8 @@ Group:		Applications/Communications
 Source0:	http://linux.bydg.org/~yogin/%{name}-%{version}.tar.gz
 # Source0-md5:	61b84b0e2cc2a1eff5e886c1e5b5f6fb
 URL:		http://linux.bydg.org/~yogin/#vyqchat
+BuildRequires:	artsc-devel
 BuildRequires:	qt-devel >= 3.1.0
-BuildRequires:	arts-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
