@@ -7,7 +7,7 @@ License:	GPL
 Group:		Applications/Communications
 Source0:	http://savannah.nongnu.org/download/vyqchat/%{name}-%{version}.tar.gz
 # Source0-md5:	21b8d1c0e9966e821174b518c07a98a9
-URL:		http://savannah.nongnu.org/
+URL:		http://www.nongnu.org/vyqchat/
 BuildRequires:	artsc-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	pkgconfig
