@@ -1,4 +1,5 @@
-Summary:	real-time, text-based, serverless LAN chat program
+Summary:	Real-time, text-based, serverless LAN chat program
+Summary(pl):	Dzia³aj±cy w czasie rzeczywistym, tekstowy, bezserwerowy program do pogawêdek sieciowych
 Name:		vyqchat
 Version:	0.1.1
 Release:	1
@@ -11,10 +12,19 @@ BuildRequires:	arts-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-VyQChat is a real-time, text-based, serverless chat program dedicated to
-LANs, that runs on Linux using Qt/X11 library. It is almost 100%
-compatible with Vypress Chat(TM) for Windows. It allows you to chat with
-friends on public or private channels, send and recieve messages etc.
+VyQChat is a real-time, text-based, serverless chat program dedicated
+to LANs, that runs on Linux using Qt/X11 library. It is almost 100%
+compatible with Vypress Chat(TM) for Windows. It allows you to chat
+with friends on public or private channels, send and recieve messages
+etc.
+
+%description -l pl
+VyQChat jest dzia³aj±cym w czasie rzeczywistym, tekstowym, nie
+wymagaj±cym serwera program do pogawêdek przeznaczonym dla sieci
+lokalnych, który dzia³a w Linuksie korzystaj±c z biblioteki Qt/X11.
+Jest on niemal w 100% zgodny z programem Vypress Chat(TM) dla Windows.
+Pozwala on na rozmowy z przyjació³mi na kana³ach publicznych lub
+prywatnych, wysy³anie i otrzymywanie wiadomo¶ci itp.
 
 %prep
 %setup  -q
