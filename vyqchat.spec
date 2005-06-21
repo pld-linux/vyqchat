@@ -2,11 +2,12 @@ Summary:	Real-time, text-based, serverless LAN chat program
 Summary(pl):	Dzia³aj±cy w czasie rzeczywistym, tekstowy, bezserwerowy program do pogawêdek sieciowych
 Name:		vyqchat
 Version:	0.2.7
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://savannah.nongnu.org/download/vyqchat/%{name}-%{version}.tar.gz
 # Source0-md5:	21b8d1c0e9966e821174b518c07a98a9
+Source1:	vyqchat.desktop
 URL:		http://www.nongnu.org/vyqchat/
 BuildRequires:	artsc-devel
 BuildRequires:	libsndfile-devel
@@ -42,9 +43,13 @@ prywatnych, wysy³anie i otrzymywanie wiadomo¶ci itp.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_desktopdir}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+cp -f %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/
+ 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -53,3 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog NEWS README THANKS TODO
 %attr(755,root,root) %{_bindir}/*
 %{_datadir}/%{name}
+%{_desktopdir}
