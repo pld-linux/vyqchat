@@ -2,10 +2,11 @@
 Enconding=UTF-8
 Name=Vyqchat
 Comment=Chat application for the QT
-Comment[pl]=Program do pogawêdek sieciowych dla QT
+Comment[pl]=Program do pogawÃªCdek sieciowych dla QT
 Exec=vyqchat
 #Icon=
 Terminal=0
 Type=Application
 Categories=Application;Network;
 StartupNotify=1
+# vi: encoding=utf-8
