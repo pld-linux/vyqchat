@@ -1,16 +1,17 @@
 Summary:	Real-time, text-based, serverless LAN chat program
 Summary(pl):	Dzia³aj±cy w czasie rzeczywistym, tekstowy, bezserwerowy program do pogawêdek sieciowych
 Name:		vyqchat
-Version:	0.2.7
-Release:	2
+Version:	0.2.8
+Release:	1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://savannah.nongnu.org/download/vyqchat/%{name}-%{version}.tar.gz
-# Source0-md5:	21b8d1c0e9966e821174b518c07a98a9
+Source0:	http://linux.bydg.org/~yogin/%{name}-%{version}.tar.gz
+# Source0-md5:	67974bc5df1ed0d63785d04325444d4f
 Source1:	vyqchat.desktop
 URL:		http://www.nongnu.org/vyqchat/
 BuildRequires:	artsc-devel
 BuildRequires:	libsndfile-devel
+BuildRequires:	openssl-devel >= 0.9.6
 BuildRequires:	pkgconfig
 BuildRequires:	qt-devel >= 3.1.0
 BuildRequires:	which
