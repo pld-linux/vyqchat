@@ -8,7 +8,7 @@ Group:		Applications/Communications
 Source0:	http://linux.bydg.org/~yogin/%{name}-%{version}.tar.gz
 # Source0-md5:	67974bc5df1ed0d63785d04325444d4f
 Source1:	vyqchat.desktop
-URL:		http://www.nongnu.org/vyqchat/
+URL:		http://linux.bydg.org/~yogin/
 BuildRequires:	artsc-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	openssl-devel >= 0.9.6
