@@ -1,5 +1,5 @@
 Summary:	Real-time, text-based, serverless LAN chat program
-Summary(pl.UTF-8):   Działający w czasie rzeczywistym, tekstowy, bezserwerowy program do pogawędek sieciowych
+Summary(pl.UTF-8):	Działający w czasie rzeczywistym, tekstowy, bezserwerowy program do pogawędek sieciowych
 Name:		vyqchat
 Version:	0.2.8
 Release:	2
