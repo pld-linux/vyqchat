@@ -7,8 +7,9 @@ License:	GPL
 Group:		Applications/Communications
 Source0:	http://linux.bydg.org/~yogin/%{name}-%{version}.tar.gz
 # Source0-md5:	67974bc5df1ed0d63785d04325444d4f
-Source1:	vyqchat.desktop
+Source1:	%{name}.desktop
 URL:		http://linux.bydg.org/~yogin/
+Patch0:		%{name}-gcc4.patch
 BuildRequires:	artsc-devel
 BuildRequires:	libao-devel
 BuildRequires:	libsndfile-devel
@@ -35,8 +36,15 @@ prywatnych, wysyłanie i otrzymywanie wiadomości itp.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
+%{__libtoolize}
+%{__aclocal}
+%{__automake}
+%{__autoconf}
+%{__autoheader}
+
 %configure \
 	--with-Qt-include-dir=%{_includedir}/qt \
 	--with-Qt-lib-dir=%{_libdir} \
@@ -52,7 +60,7 @@ install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
 cp -f %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/
 cp -f gfx/default/user.png $RPM_BUILD_ROOT%{_pixmapsdir}/vyqchat.png
- 
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
