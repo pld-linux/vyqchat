@@ -1,0 +1,33 @@
+--- vyqchat-0.2.8/src/user.h~	2005-07-18 21:03:01.000000000 +0200
++++ vyqchat-0.2.8/src/user.h	2007-03-17 16:11:24.082743843 +0100
+@@ -38,7 +38,7 @@
+ 			}
+ 			return false;
+ 		}
+-		bool User::setStatus(char s) { status=s; return true; }
++		bool setStatus(char s) { status=s; return true; }
+ 		void setNick(const QString &nick) { setText(nick); }
+ 		int incDeadCounter() { if (dcnt<1) dcnt++; return dcnt; }
+ 		int decDeadCounter() { return --dcnt; }
+--- vyqchat-0.2.8/src/settings.h~	2005-07-18 20:54:08.000000000 +0200
++++ vyqchat-0.2.8/src/settings.h	2007-03-17 16:11:57.960415507 +0100
+@@ -88,7 +88,7 @@
+ 
+ 		//
+ 		// Get methods
+-		const UUID& Settings::getUUID()    const { return uuid; }
++		const UUID& getUUID()    const { return uuid; }
+ 		const QString& getIconThemeName()  const { return icontheme; }
+ 		const QString& getNick()           const { return nick; }
+ 		char getGender()                   const { return gender; }
+--- vyqchat-0.2.8/src/sound.h~	2005-07-18 20:54:08.000000000 +0200
++++ vyqchat-0.2.8/src/sound.h	2007-03-17 16:11:36.121916418 +0100
+@@ -47,7 +47,7 @@
+ 		bool reload_samples(Settings &settings);
+ 		static bool init(Settings *settings);
+ 		static void close();
+-		static const QString& Sound::error();
++		static const QString& error();
+ 		static void play(VyEvent evt);
+ };
+ 
