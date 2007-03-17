@@ -10,6 +10,7 @@ Source0:	http://linux.bydg.org/~yogin/%{name}-%{version}.tar.gz
 Source1:	vyqchat.desktop
 URL:		http://linux.bydg.org/~yogin/
 BuildRequires:	artsc-devel
+BuildRequires:	libao-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	openssl-devel >= 0.9.6
 BuildRequires:	pkgconfig
