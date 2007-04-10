@@ -15,7 +15,7 @@ BuildRequires:	libao-devel
 BuildRequires:	libsndfile-devel
 BuildRequires:	openssl-devel >= 0.9.6
 BuildRequires:	pkgconfig
-BuildRequires:	qt-devel >= 3.1.0
+BuildRequires:	qt-devel >= 6:3.1.0
 BuildRequires:	which
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
