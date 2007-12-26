@@ -1,12 +1,11 @@
 [Desktop Entry]
-Encoding=UTF-8
 Name=Vyqchat
 Comment=Chat application for the QT
 Comment[pl]=Program do pogawędek sieciowych dla QT
 Exec=vyqchat
-Icon=vyqchat.png
+Icon=vyqchat
 Terminal=false
 Type=Application
 Categories=Qt;Network;
-StartupNotify=1
+StartupNotify=true
 # vi: encoding=utf-8
